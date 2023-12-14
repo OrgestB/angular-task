@@ -1,0 +1,19 @@
+<mat-list *ngIf="(allCharts$ | async) as chartData">
+  <mat-list-item *ngFor="let chart of chartData">{{ chart.name }}
+    <div class="icon-buttons">
+      <button mat-icon-button color="primary" (click)="edit(chart)">
+        <mat-icon>edit</mat-icon>
+      </button>
+      <button mat-icon-button color="warn" (click)="delete(chart)">
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </mat-list-item>
+</mat-list>
+<button mat-flat-button color="primary" (click)="addItem()">
+  <mat-icon>add</mat-icon>Add
+</button>
+
+
+
+

@@ -1,0 +1,31 @@
+/* Style for each form field row */
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  
+  /* Style for each form field within a row */
+  .form-field {
+    flex: 1;
+    margin-right: 10px; /* Adjust as needed */
+  }
+  
+  /* Style for the date, value, and remove button row */
+  .date-value-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+  
+  /* Style for date and value within the date, value, and remove button row */
+  .flex-item {
+    flex: 1;
+    margin-right: 10px; /* Adjust as needed */
+  }
+  
+  /* Style for the remove button */
+  .remove-button {
+    flex-shrink: 0;
+  }
+  

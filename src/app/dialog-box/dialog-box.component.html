@@ -1,0 +1,16 @@
+<h1 mat-dialog-title *ngIf="data.action == 'delete'">Delete Chart</h1>
+<h1 mat-dialog-title *ngIf="data.action == 'edit'">Edit Chart</h1>
+<h1 mat-dialog-title *ngIf="data.action == 'add'">Add New Chart</h1>
+<div mat-dialog-content *ngIf="data.action == 'edit'">
+  <app-edit-chart [chartItem]="data.item"></app-edit-chart>
+</div>
+<div mat-dialog-content *ngIf="data.action == 'delete'">
+  <app-delete-chart [chartItem]="data.item"></app-delete-chart>
+</div>
+<div mat-dialog-content *ngIf="data.action == 'add'">
+ <app-add-chart></app-add-chart>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>No</button>
+  <button mat-button mat-dialog-close cdkFocusInitial>Ok</button>
+</div>
